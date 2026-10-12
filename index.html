@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cosmin Stamate — Software Developer</title>
+  <meta name="description" content="Cosmin Stamate, Computing Science student at the University of Groningen. From Roblox at twelve to Discord bots to university — a short trip through how I got here.">
+  <meta property="og:title" content="Cosmin Stamate — Software Developer">
+  <meta property="og:description" content="From a Roblox baseplate at twelve to Discord bots to the University of Groningen.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0d0c0a">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js" } }
+  </script>
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  <!-- Scene -->
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- HUD -->
+  <header class="hud hud--top">
+    <a class="mark" href="#top" aria-label="Back to top">
+      <span class="mark__block"></span>Cosmin Stamate
+    </a>
+    <nav class="hud__nav">
+      <a href="#work">Work</a>
+      <a href="https://github.com/CosminStamateAndrei" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/cosmin-stamate-098292202/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hud hud--bottom" aria-hidden="true">
+    <span class="chapter-label" id="chapterLabel">00 — Start</span>
+    <span class="progress"><span class="progress__bar" id="progressBar"></span></span>
+  </div>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="beat beat--hero">
+      <div class="copy copy--hero reveal">
+        <p class="kicker"><span>Computing Science · Groningen</span></p>
+        <h1 class="display">
+          <span class="line"><span>Cosmin</span></span>
+          <span class="line"><span>Stamate</span></span>
+        </h1>
+        <p class="lede">I've been building things since I was twelve. Scroll down — it's a short trip through how I got here.</p>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span>Scroll</span><i></i></div>
+    </section>
+
+    <!-- Roblox -->
+    <section class="beat beat--right">
+      <div class="copy reveal">
+        <p class="kicker"><b>01</b><span>Age 12 · Roblox</span></p>
+        <h2 class="title">The baseplate</h2>
+        <p>I started where a lot of people do: a grey Roblox baseplate and a tutorial playing on the side. I copied scripts I didn't understand, broke them, and slowly worked out why they did what they did.</p>
+        <p>Lua was the first language I ever wrote, even if back then I just called it "scripting".</p>
+      </div>
+    </section>
+
+    <!-- Transition -->
+    <section class="beat beat--center">
+      <p class="aside reveal">Then I wanted to build things<br>people actually <em>used</em>.</p>
+    </section>
+
+    <!-- Discord bots -->
+    <section class="beat beat--left">
+      <div class="copy reveal">
+        <p class="kicker"><b>02</b><span>Discord bots</span></p>
+        <h2 class="title">Where it clicked</h2>
+        <p>A Discord bot is a real program with real users. It has to stay online, handle commands nobody planned for, and not fall over when a server gets busy.</p>
+        <p>That's when I stopped following tutorials line by line and started actually learning — and made the first applications I was proud of: a role manager, a slot machine, a crypto tracker, an event finder built on the Ticketmaster API.</p>
+      </div>
+    </section>
+
+    <!-- Chain -->
+    <section class="beat beat--center">
+      <p class="chain reveal" aria-label="What bots taught me">
+        <span>commands</span><i>→</i><span>events</span><i>→</i><span>APIs</span><i>→</i><span>databases</span><i>→</i><span>users</span>
+      </p>
+    </section>
+
+    <!-- Exploring -->
+    <section class="beat beat--right">
+      <div class="copy reveal">
+        <p class="kicker"><b>03</b><span>Exploring</span></p>
+        <h2 class="title">Everything else</h2>
+        <p>After that I got curious about all of it. Different languages, and the different kinds of things you can make with them — websites, tools, games, little scripts that save ten minutes a day.</p>
+        <p>Each one taught me something the others couldn't.</p>
+      </div>
+    </section>
+
+    <!-- Tunnel -->
+    <section class="beat beat--center">
+      <p class="caption reveal">// one language at a time</p>
+    </section>
+
+    <!-- Transition -->
+    <section class="beat beat--center">
+      <p class="aside reveal">Then I went looking<br>for <em>structure</em>.</p>
+    </section>
+
+    <!-- University -->
+    <section class="beat beat--right">
+      <div class="copy reveal">
+        <p class="kicker"><b>04</b><span>University</span></p>
+        <h2 class="title">Fundamentals</h2>
+        <p>Now I study Computing Science at the University of Groningen. It takes years of figuring things out on my own and gives them a foundation: how things work underneath, why some solutions hold up and others don't, and how to build software with other people.</p>
+        <p class="meta">BSc Computing Science · University of Groningen · NL</p>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="beat beat--left beat--long" id="work">
+      <div class="copy copy--wide reveal">
+        <p class="kicker"><b>—</b><span>Selected work</span></p>
+        <h2 class="title">Things I've built</h2>
+        <ol class="work">
+          <li>
+            <a href="https://ender-maps.vercel.app" target="_blank" rel="noopener">
+              <span class="work__name">EnderMaps <i>↗</i></span>
+              <span class="work__desc">A real-world map that renders like the in-game map from a certain blocky sandbox game: chunky pixel tiles, an F3-style debug HUD, <code>/locate</code> search. No image assets at all.</span>
+              <span class="work__tags">React · Leaflet · OpenStreetMap</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://memotime.vercel.app" target="_blank" rel="noopener">
+              <span class="work__name">memotime <i>↗</i></span>
+              <span class="work__desc">A shared, live Dutch ↔ English word list with translation practice. Forgiving answer checking that ignores accents and articles and flags small typos.</span>
+              <span class="work__tags">React · Supabase · Vercel</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/CosminStamateAndrei/Chime-Of-Recovery" target="_blank" rel="noopener">
+              <span class="work__name">Chime of Recovery <i>↗</i></span>
+              <span class="work__desc">An indie game made with a small team. Back to where it started, this time without the tutorial.</span>
+              <span class="work__tags">Java · Game dev</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/CosminStamateAndrei/event-locator" target="_blank" rel="noopener">
+              <span class="work__name">Event Locator <i>↗</i></span>
+              <span class="work__desc">A Discord bot that finds events near a city through the Ticketmaster API, filters out finished sales, and pages through results with buttons.</span>
+              <span class="work__tags">Python · discord.py · REST</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/CosminStamateAndrei/dutch-rvds" target="_blank" rel="noopener">
+              <span class="work__name">Dutch RVD policies <i>↗</i></span>
+              <span class="work__desc">A dataset of responsible vulnerability disclosure policies from 90 Dutch companies, with a calibration set and prompts for LLM analysis.</span>
+              <span class="work__tags">Python · Security research</span>
+            </a>
+          </li>
+        </ol>
+        <div class="links-row">
+          <a class="link-arrow" href="https://github.com/CosminStamateAndrei" target="_blank" rel="noopener">Everything on GitHub <span>↗</span></a>
+          <a class="link-arrow" href="https://www.linkedin.com/in/cosmin-stamate-098292202/" target="_blank" rel="noopener">Experience on LinkedIn <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Now -->
+    <section class="beat beat--left">
+      <div class="copy reveal">
+        <p class="kicker"><b>05</b><span>Now</span></p>
+        <h2 class="title">What's next</h2>
+        <p>I'm looking for the next thing to build, and people to build it with. If you're hiring, want to collaborate, or just have an interesting problem, I'd like to hear about it.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="beat beat--end" id="contact">
+      <div class="copy copy--end reveal">
+        <p class="kicker"><span>That's the path so far</span></p>
+        <h2 class="display display--end">
+          <span class="line"><span>Let's</span></span>
+          <span class="line"><span>talk.</span></span>
+        </h2>
+        <ul class="contact">
+          <li><a href="mailto:stamatecossss@gmail.com">stamatecossss@gmail.com</a></li>
+          <li><a href="https://github.com/CosminStamateAndrei" target="_blank" rel="noopener">GitHub ↗</a></li>
+          <li><a href="https://www.linkedin.com/in/cosmin-stamate-098292202/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        </ul>
+      </div>
+      <footer class="foot">
+        <span>© <span id="year">2026</span> Cosmin Stamate</span>
+        <a href="#top">Back to the start ↑</a>
+      </footer>
+    </section>
+  </main>
+
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}.reveal *{opacity:1!important;transform:none!important}</style></noscript>
+</body>
+</html>

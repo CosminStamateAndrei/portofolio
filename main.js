@@ -19,18 +19,20 @@ const CAMERA_KEYS = [
 // Languages
 const LANGUAGES = [
   "lua", "python", "javascript", "java", "c++", "c", "sql", "react",
-  "html", "css", "bash", "node", "git", "supabase", "leaflet",
+  "html", "css", "bash", "git", "dafny", "haskell", "docker",
+  "kubernetes", "terraform",
 ];
 
 // Chapters
 const CHAPTERS = [
-  [0, "00 — Start"],
-  [1, "01 — Baseplate"],
-  [3, "02 — Discord bots"],
-  [5, "03 — Exploring"],
-  [8, "04 — University"],
-  [9, "— Selected work"],
-  [10, "05 — Now"],
+  [0, "00 Start"],
+  [1, "01 Roblox"],
+  [3, "02 Discord bots"],
+  [5, "03 Exploring"],
+  [8, "04 University"],
+  [9, "05 Projects"],
+  [10, "06 Now"],
+  [11, "07 Contact"],
 ];
 
 // Colors

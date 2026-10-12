@@ -239,6 +239,26 @@ main { position: relative; z-index: 2; }
   color: var(--muted) !important;
 }
 
+.degrees {
+  list-style: none;
+  margin: 26px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+.degrees li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.degrees b { color: var(--paper); font-weight: 600; }
+
 .aside {
   margin: 0;
   font-weight: 300;
